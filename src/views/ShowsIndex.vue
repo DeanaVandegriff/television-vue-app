@@ -4,7 +4,7 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      message: "Welcome to Television Talk!",
+      message: "",
       shows: [],
     };
   },
@@ -14,13 +14,14 @@ export default {
       this.shows = response.data;
     });
   },
-  methods: {},
 };
 </script>
 
 <template>
-  <div class="home">
-    <h1>{{ message }}</h1>
+  <h1>Top Television!</h1>
+  <div v-for="show in shows" v-bind:key="show.id">
+    <h2>{{ show.title }}</h2>
+    <a v-bind:href="`/shows/${show.id}`">More Info!</a>
   </div>
 </template>
 
