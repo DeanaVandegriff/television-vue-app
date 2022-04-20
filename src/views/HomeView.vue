@@ -1,10 +1,12 @@
 <script>
 import axios from "axios";
+import image from "../assets/tv.png";
 
 export default {
   data: function () {
     return {
       message: "Welcome to Television Talk!",
+      image: image,
       shows: [],
     };
   },
@@ -21,6 +23,7 @@ export default {
 <template>
   <div class="home">
     <h1>{{ message }}</h1>
+    <img :src="image" />
   </div>
 </template>
 

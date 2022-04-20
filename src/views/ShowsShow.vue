@@ -18,6 +18,8 @@ export default {
 
 <template>
   <h1>TV Shows!</h1>
-  <p>{{ show }}</p>
+  <h2>{{ show.title }}</h2>
+  <p>{{ show.year }}</p>
+  <p>{{ show.plot }}</p>
   <a href="/shows">Back to all Shows</a>
 </template>
