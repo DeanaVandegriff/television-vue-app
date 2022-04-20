@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ShowsIndex from "../views/ShowsIndex.vue";
 import ShowsShow from "../views/ShowsShow.vue";
+import ShowsNew from "../views/ShowsNew.vue";
+import ShowsUpdate from "../views/ShowsUpdate.vue";
 const routes = [
   {
     path: "/",
@@ -25,6 +27,16 @@ const routes = [
     path: "/shows/:id",
     name: "shows-show",
     component: ShowsShow,
+  },
+  {
+    path: "/shows/new",
+    name: "shows-create",
+    component: ShowsNew,
+  },
+  {
+    path: "/shows/update",
+    name: "shows-update",
+    component: ShowsUpdate,
   },
 ];
 

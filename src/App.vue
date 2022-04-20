@@ -5,6 +5,10 @@
     <router-link to="/about">About</router-link>
     |
     <router-link to="/shows">Shows</router-link>
+    |
+    <router-link to="/shows/new">Enter a Show</router-link>
+    |
+    <router-link to="/shows/update">Update a Show</router-link>
   </nav>
   <router-view />
 </template>
