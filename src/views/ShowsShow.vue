@@ -36,9 +36,7 @@ export default {
   <h2>{{ show.title }}</h2>
   <p>{{ show.year }}</p>
   <p>{{ show.plot }}</p>
-  <div>
-    <button v-on:click="destroyShow(currentShow)">Remove Show</button>
-  </div>
+  <p>Show ID: {{ show.id }}</p>
   <br />
   <br />
   <div>
