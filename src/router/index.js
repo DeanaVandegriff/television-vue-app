@@ -3,7 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import ShowsIndex from "../views/ShowsIndex.vue";
 import ShowsShow from "../views/ShowsShow.vue";
 import ShowsNew from "../views/ShowsNew.vue";
-import ShowsUpdate from "../views/ShowsUpdate.vue";
+import ShowsEdit from "../views/ShowsEdit.vue";
 const routes = [
   {
     path: "/",
@@ -34,9 +34,9 @@ const routes = [
     component: ShowsNew,
   },
   {
-    path: "/shows/update",
-    name: "shows-update",
-    component: ShowsUpdate,
+    path: "/shows/:id/edit",
+    name: "shows-edit",
+    component: ShowsEdit,
   },
 ];
 

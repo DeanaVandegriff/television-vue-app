@@ -4,7 +4,7 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      newShowsParams: { plot: "" },
+      newShowParams: {},
     };
   },
   methods: {
@@ -19,22 +19,22 @@ export default {
 };
 </script>
 <template>
-  <div class="shows-new">
-    <form v-on:submit.prevent="createShow()">
-      <h1>Enter a show!!</h1>
+  <h1>Enter a show!!</h1>
+  <div class="shows-update">
+    <form v-on:submit.prevent="updateShow()">
       <div>
         title:
-        <input type="text" v-model="newShowsParams.title" />
+        <input type="text" v-model="newShowParams.title" />
       </div>
       <br />
       <div>
         year:
-        <input type="text" v-model="newShowsParams.year" />
+        <input type="text" v-model="newShowParams.year" />
       </div>
       <br />
       <div>
         plot:
-        <input type="text" v-model="newShowsParams.plot" />
+        <input type="text" v-model="newShowParams.plot" />
       </div>
       <br />
       <input type="submit" value="enter" />
